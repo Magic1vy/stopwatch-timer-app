@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch/Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:,">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <audio id="song" autoplay="autoplay">
+        <source src="">
+    </audio>
+
+
+<div class="container">
+
+    <div id="stopwatch">
+        <h2 class="header">Stopwatch</h2>
+        <h2 class="time-display">00:00:00</h2>
+        <div class="btn-action">
+            <button id="start">start</button>
+            <button id="reset">reset</button>
+        </div>
+    </div> 
+<hr>
+    <div id="timer">
+        <h2 class="header">Timer</h2>
+        <div class="time-container">
+            <div id="module_inner">
+                <label>Hours</label>
+                <input id="hour" type="number" placeholder="0" min="0" >
+            </div>
+    
+            <div id="module_inner">
+                <label>Minutes</label>
+                <input id="minute" type="number" placeholder="0" min="0" >
+            </div>
+            
+            <div  id="module_inner">
+                <label>Seconds</label>
+            <input id="second" type="number" placeholder="0" min="0" >
+            </div>
+
+        </div>
+        <h2 class="timer-display">00:00:00</h2>
+        <div class="btn-action">
+            <button id="begin">start</button>
+            <button id="timerReset">reset</button>
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
